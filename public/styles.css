@@ -1,0 +1,223 @@
+body{margin:0;
+  text-align: center;
+  background-color: white;
+font-family:  'Montserrat', sans-serif;}
+
+.bg-custom {
+    background-color: #DFF6FF;
+}
+
+/* navbar styling */
+.navbar-brand{
+  padding-left: 2%;
+}
+.nav-link{
+  font-size: 1.5rem;
+  margin-left: 40px;
+}
+
+#navbarSupportedContent{
+margin-right: 20px;
+}
+
+.navbar-nav.ms-auto.list li a {
+    color: rgb(0,107,125);
+}
+
+
+h1{margin-top: 0;
+margin-bottom: 0;font-family: 'Sacramento', cursive; font-size: 50px}
+h2,h3,h4{margin-top: 0;
+margin-bottom: 0;font-family: 'Montserrat', sans-serif;}
+.top-container{background-color: #DFF6FF; margin:0; position: relative;height: 650px;}
+
+.top-cloud{height: 200px;
+width:auto;position: absolute;
+right:180px;}
+
+.bottom-cloud{height: 200px;
+width:auto;position: absolute;
+left:180px; top:230px;}
+
+.text{position:absolute;width:20%; top:200px; right: 40%;left: 40%;bottom: auto;}
+
+.mountain{position:absolute;width:50%; top:300px; right: 25%;left: 25%;bottom: auto;}
+.profile-pic{height: 150px;}
+
+figure {
+    display: inline-block;
+    border: 1px;
+    margin: 20px; /* adjust as needed */
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px;
+    text-align: center;
+}
+
+.middle-container {
+	background-color: white;
+	font-family: 'Montserrat';
+	font-weight: 400;
+	position: relative;
+  height: 1300px;
+  text-align: center;
+}
+
+
+.middle-container .profile .Passion-Icons{
+display: grid;
+justify-content: center;
+align-items: center;
+grid-template-columns: 1fr 1fr 1fr;
+padding: 2%;
+}
+
+.middle-container .profile .profile-pic{
+	margin-top: 2%;
+}
+
+/* Timeline Bar Styling */
+.timeline {
+	outline:none;
+ -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+		 box-sizing: border-box;
+		 width:800px;
+  height: 20px;
+  list-style: none;
+  text-align: justify;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          background: -webkit-linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(189,192,193,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%)
+}
+  
+
+.timeline:after {display: inline-block; content: ""; width: 100%;}
+
+.timeline li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: rgb(1,153,174);
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+
+.timeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 26px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.timeline li:nth-child(odd):before {
+	top: -40px;
+}
+.timeline li:nth-child(even):before {
+	bottom: -40px;
+}
+
+.timeline li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+
+.timeline li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	-webkit-transform: translate(-50%, 100%);
+	   -moz-transform: translate(-50%, 100%);
+	    -ms-transform: translate(-50%, 100%);
+	     -o-transform: translate(-50%, 100%);
+	        transform: translate(-50%, 100%);
+}
+.timeline li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	-webkit-transform: translate(-50%, -100%);
+	   -moz-transform: translate(-50%, -100%);
+	    -ms-transform: translate(-50%, -100%);
+	     -o-transform: -webkit-transition: prop time;
+       -o-transition: prop time;
+       transition: prop time;ate(-50%, -100%);
+	        transform: translate(-50%, -100%);
+}
+
+/* Education Qualtification Table Styling */
+.EQ {
+  padding: 3%;
+  position: absolute;
+  left: 21%;
+  right:21%;
+  top: 60%;
+  width:60%;
+}
+
+.EQT{
+	border-collapse: collapse;
+}
+	#EQT td {
+   border: 1px solid #ddd;
+   padding: 8px;}
+   #EQT tr:nth-child(even) {background-color: rgba(189,192,193,1);}
+ #EQT tr:hover{background-color: #ddd;}
+ #EQT tr:first-child {background-color: rgb(1,153,174); color: white; font-weight: bold;}
+
+
+ /* Work Experience Table Styling */
+.CWE {
+	padding: 6%;
+    position: absolute;
+    left: 9%;
+    right:6%;
+    top: 80%;
+  width: 88%;
+align-items: center;}
+
+.CWET{
+     border-collapse: collapse;}
+     #CWET td {
+    border: 1px solid #ddd;
+    padding: 8px;}
+    #CWET tr:nth-child(even) {background-color: rgba(189,192,193,1);}
+#CWET tr:hover{background-color: #ddd;}
+#CWET tr:first-child {background-color: rgb(1,153,174); color: white; font-weight: bold;}
+#CWET tr:nth-child(3){text-align: left; padding-left: 0px;}
+
+
+/* Contact Me Section Styling */
+.contact-me{
+	position: relative; 
+	top: 350px;
+	text-align: center;
+}
+
+.bottom-container{
+	position: relative; 
+	top:400px;
+	text-align: center;
+}
+
+.JnJlink{color: white; }
